@@ -1,0 +1,215 @@
+/** @format */
+@font-face {
+  font-family: "graphik";
+  src: url("/fonts/Graphik-Thin-Web.eot");
+  src: url("/fonts/Graphik-Thin-Web.woff2") format("woff2"),
+    url("/fonts/Graphik-Thin-Web.woff") format("woff");
+}
+
+body {
+  font-family: "gtaphik", sans-serif;
+  font-size: font-size(xs);
+  line-height: 1.8;
+  font-weight: font-weight(light);
+  letter-spacing: 1px;
+  height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: $primary-color;
+  font-size: font-size(xs);
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+ul {
+  list-style: none;
+  li {
+    font-size: font-size(xs);
+  }
+  &.type {
+    margin-left: 1rem;
+    &.disc {
+      list-style-type: disc;
+    }
+  }
+}
+
+p {
+  font-size: font-size(xs);
+  margin-bottom: 0.2rem;
+}
+
+img {
+  width: 100%;
+  &-round {
+    border-radius: 50%;
+  }
+}
+
+.animate {
+  &.bounce {
+    animation: bounce 1s infinite alternate;
+  }
+}
+
+// FONT CASE
+.ft-capitalize {
+  text-transform: font-case(capital);
+}
+.ft-uppercase {
+  text-transform: font-case(upper);
+}
+.ft-lower {
+  text-transform: font-case(lower);
+}
+
+// FONT SIZE
+.ft-xxs {
+  font-size: font-size(xxs);
+}
+.ft-xs {
+  font-size: font-size(xs);
+}
+.ft-sm {
+  font-size: font-size(sm);
+}
+.ft-md {
+  font-size: font-size(md);
+}
+.ft-lg {
+  font-size: font-size(lg);
+}
+.ft-xl {
+  font-size: font-size(xl);
+}
+
+.ft-xxl {
+  font-size: font-size(xxl);
+}
+
+// FONT WEIGHT
+.fw-light {
+  font-weight: font-weight(light);
+}
+.fw-regular {
+  font-weight: font-weight(regular);
+}
+.fw-medium {
+  font-weight: font-weight(medium);
+}
+.fw-bold {
+  font-weight: font-weight(bold);
+}
+.fw-black {
+  font-weight: font-weight(black);
+}
+
+// FONT COLOR
+.ft-base {
+  color: $base-color !important;
+}
+.ft-primary {
+  color: $primary-color !important;
+  &-100 {
+    color: rgba($primary-color, 0.1);
+  }
+  &-300 {
+    color: rgba($primary-color, 0.3);
+  }
+  &-500 {
+    color: rgba($primary-color, 0.5);
+  }
+  &-800 {
+    color: rgba($primary-color, 0.8);
+  }
+}
+.ft-secondary {
+  color: $secondary-color !important;
+}
+.ft-warning {
+  color: $warning-color !important;
+}
+.ft-info {
+  color: $info-color !important;
+}
+.ft-danger {
+  color: $danger-color !important;
+}
+.ft-success {
+  color: $success-color !important;
+}
+.ft-dark {
+  color: $dark-color !important;
+}
+.ft-light {
+  color: $light-color !important;
+  &-100 {
+    color: rgba($light-color, 0.1);
+  }
+  &-300 {
+    color: rgba($light-color, 0.3);
+  }
+  &-500 {
+    color: rgba($light-color, 0.5);
+  }
+  &-800 {
+    color: rgba($light-color, 0.8);
+  }
+}
+
+// TEXT TRUNCATE
+.ft-truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+hr {
+  margin: 1rem 0;
+
+  &.primary {
+    border-color: $primary-color;
+  }
+  &.base {
+    border-color: $base-color;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+// BACKGORUNDS COLOR
+.skin {
+  &-primary {
+    @include set-background($primary-color);
+  }
+  &-secondary {
+    @include set-background($secondary-color);
+  }
+  &-acent {
+    @include set-background($acent-color);
+  }
+  &-light {
+    @include set-background($light-color);
+  }
+  &-dark {
+    @include set-background($dark-color);
+  }
+  &-base {
+    @include set-background($base-color);
+  }
+  &-success {
+    @include set-background($success-color);
+  }
+  &-danger {
+    @include set-background($danger-color);
+  }
+}

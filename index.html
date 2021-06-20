@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simpplr | Task</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/all.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+    <!-- GASP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/CSSRulePlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/ScrollTrigger.min.js"></script>
+    
+</head>
+<body>
+    <!-- APP HEADER -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="logo">
+                    iMac 24"
+                </div>
+                <nav>
+                    <a href="#" class="active">Overview</a>
+                    <a href="#" class="">Why Mac</a>
+                    <a href="#" class="">Tech Spec</a>
+                    <a href="#" class="v-btn v-btn-primary btn-sm">Buy</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="banner">
+        <div class="main-heading">
+            iMac
+        </div>
+        <div class="cc">
+            <div class="scaleDown"></div>
+        </div>
+        <div class="banner-content">
+            <h2 class="say-hello">Say <span>hello</span> <span>to</span> <span>the</span> new iMac.<br>
+            Inspired by the best of Apple. Transformed by the M1 chip. Stands out in any space. Fits perfectly into your life.</h2>
+            <div class="pricing">$14450.00</div>
+            <a href="" class="watch-event">Watch the event ></a>
+        </div>
+    </section>
+
+
+    <section class="color-varients">
+        <div class="container">
+            <h4>Seven vibrant colors.</h4>
+            <div class="animated-title">
+                <p>You do</p> 
+                <div class="v-slider-frame">
+                    <ul class="v-slides">
+                        <li class="v-slide">Desktop</li>
+                        <li class="v-slide">Mac</li>
+                        <li class="v-slide">Mac Book Pro</li>
+                        <li class="v-slide">ipad</li>
+                        <li class="v-slide">iWatch</li>
+                        <li class="v-slide">iPod</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="running-video">
+        <button onclick="myFunction()" class="icon icon-md icon-danger play-btn " id="myBtn"><i class="fab fa-youtube"></i></button>
+        <video width="100%" id="myVideo" height="800px" autoplay muted loop>
+            <source
+                src="https://www.apple.com/105/media/us/imac-24/2021/5e004d75-3ad6-4bb9-ab59-41f891fc52f0/anim/colors-hero/large_2x.mp4"
+                type="video/webm">
+            <source
+                src="https://www.apple.com/105/media/us/imac-24/2021/5e004d75-3ad6-4bb9-ab59-41f891fc52f0/anim/colors-hero/large_2x.mp4"
+                type="video/mp4">
+            Sorry, your browser doesn't support embedded videos.
+        </video>
+    </section>
+
+    <section class="live-with-us bg-img live-with-us-bg"></section>
+
+    <section class="thin-display">
+        <div class="container">
+            <div class="scale-title-box">
+                <div class="scale-title">
+                    Only 11.5 mm. Now that’s thin.
+                </div>
+            </div>
+            <div class="desktop-view-container">
+                <div class="desktop-content-left">
+                    <img src="./assets/m1.png" alt="">
+                    This extraordinary design is only possible thanks to M1, the first system on a chip for Mac. It makes iMac so thin and
+                    compact that it fits in more places than ever.
+                </div>
+                <div class="desktop-side-view">
+                    <img src="assets/desktop-side-view.jpeg" alt="">
+                </div>
+                <div class="desktop-content-right">
+                    <img src="./assets/m1.png" alt="">
+                    M1 integrates the processor, graphics, memory and more onto a single chip. That let us put an entire computer into a
+                    space so small it practically disappears.
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="js/custom.js"></script>
+</body>
+</html>
